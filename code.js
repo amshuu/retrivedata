@@ -5,10 +5,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const retrieveButton = document.getElementById("retrieve-button");
     const retrieveResult = document.getElementById("retrieve-result");
 
-    // Data storage object
     const dataStorage = {};
 
-    // Event listener for storing data
     storeButton.addEventListener("click", function (e) {
         e.preventDefault();
         const dataInput = document.getElementById("data");
@@ -26,7 +24,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    // Event listener for retrieving data
     retrieveButton.addEventListener("click", function (e) {
         e.preventDefault();
         const retrieveCodeInput = document.getElementById("retrieve-code");
